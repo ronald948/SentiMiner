@@ -1,0 +1,23 @@
+# SentiMiner V2 — Dependencias
+# Universidad Privada del Norte | Grupo 1
+# Proyecto de Disrupción Tecnológica — Sprint 2
+
+# ── Motor NLP Principal (BETO — BERT en Español) ─────────────
+# Modelo: finiteautomata/beto-sentiment-analysis
+# Descarga ~500MB la primera vez (se cachea en ~/.cache/huggingface/)
+torch>=2.0.0
+transformers>=4.30.0
+
+# ── Detección de encoding de archivos (opcional) ─────────────
+# Si no está instalado, el sistema usa UTF-8/Latin-1 automáticamente
+chardet>=5.0.0
+
+# ── Sprint 2 — Gráficos (HU-006) ──────────────────────────────
+matplotlib>=3.8.0      # HU-006: Gráfico de pastel y barras
+# seaborn>=0.13.0      # Opcional: visualización mejorada
+
+# ── Instalación ────────────────────────────────────────────────
+# pip install torch transformers chardet
+#
+# Primer uso: el modelo BETO se descarga automáticamente desde:
+# https://huggingface.co/finiteautomata/beto-sentiment-analysis
